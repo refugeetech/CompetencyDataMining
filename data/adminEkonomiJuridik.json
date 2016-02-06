@@ -1,1 +1,243 @@
-{"soklista":{"listnamn":"yrkesgrupper","totalt_antal_platsannonser":4017,"totalt_antal_ledigajobb":6624,"sokdata":[{"id":2611,"namn":"Advokater","antal_platsannonser":2,"antal_ledigajobb":2},{"id":2614,"namn":"Affärs- och företagsjurister","antal_platsannonser":28,"antal_ledigajobb":32},{"id":3333,"namn":"Arbetsförmedlare","antal_platsannonser":160,"antal_ledigajobb":216},{"id":2623,"namn":"Arkeologer och specialister inom humaniora m.m.","antal_platsannonser":8,"antal_ledigajobb":10},{"id":4410,"namn":"Arkiv- och biblioteksassistenter m.fl.","antal_platsannonser":16,"antal_ledigajobb":50},{"id":4113,"namn":"Backofficepersonal m.fl.","antal_platsannonser":57,"antal_ledigajobb":81},{"id":3343,"namn":"Chefssekreterare och VD-assistenter m.fl.","antal_platsannonser":34,"antal_ledigajobb":38},{"id":2412,"namn":"Controller","antal_platsannonser":223,"antal_ledigajobb":243},{"id":2612,"namn":"Domare","antal_platsannonser":8,"antal_ledigajobb":8},{"id":3342,"namn":"Domstols- och juristsekreterare m.fl.","antal_platsannonser":13,"antal_ledigajobb":20},{"id":4111,"namn":"Ekonomiassistenter m.fl.","antal_platsannonser":416,"antal_ledigajobb":485},{"id":2413,"namn":"Finansanalytiker och investeringsrådgivare m.fl.","antal_platsannonser":53,"antal_ledigajobb":64},{"id":3321,"namn":"Försäkringssäljare och försäkringsrådgivare","antal_platsannonser":43,"antal_ledigajobb":90},{"id":2615,"namn":"Förvaltnings- och organisationsjurister","antal_platsannonser":29,"antal_ledigajobb":35},{"id":3341,"namn":"Gruppledare för kontorspersonal","antal_platsannonser":26,"antal_ledigajobb":34},{"id":2432,"namn":"Informatörer, kommunikatörer och PR-specialister","antal_platsannonser":138,"antal_ledigajobb":165},{"id":4212,"namn":"Inkasserare och pantlånare m.fl.","antal_platsannonser":23,"antal_ledigajobb":27},{"id":4225,"namn":"Kontorsreceptionister","antal_platsannonser":167,"antal_ledigajobb":306},{"id":2421,"namn":"Lednings- och organisationsutvecklare","antal_platsannonser":142,"antal_ledigajobb":165},{"id":4112,"namn":"Löne- och personaladministratörer","antal_platsannonser":272,"antal_ledigajobb":307},{"id":4117,"namn":"Medicinska sekreterare, vårdadministratörer m fl","antal_platsannonser":300,"antal_ledigajobb":1601},{"id":3311,"namn":"Mäklare inom finans","antal_platsannonser":10,"antal_ledigajobb":13},{"id":2415,"namn":"Nationalekonomer och makroanalytiker m.fl.","antal_platsannonser":14,"antal_ledigajobb":17},{"id":2423,"namn":"Personal- och HR-specialister","antal_platsannonser":356,"antal_ledigajobb":372},{"id":2422,"namn":"Planerare och utredare m.fl.","antal_platsannonser":272,"antal_ledigajobb":447},{"id":3313,"namn":"Redovisningsekonomer","antal_platsannonser":370,"antal_ledigajobb":396},{"id":2411,"namn":"Revisorer m.fl.","antal_platsannonser":24,"antal_ledigajobb":24},{"id":3314,"namn":"Skadereglerare och värderare","antal_platsannonser":15,"antal_ledigajobb":20},{"id":3352,"namn":"Skattehandläggare","antal_platsannonser":23,"antal_ledigajobb":76},{"id":4116,"namn":"Skolassistenter m.fl.","antal_platsannonser":17,"antal_ledigajobb":19},{"id":3353,"namn":"Socialförsäkringshandläggare","antal_platsannonser":23,"antal_ledigajobb":101},{"id":2122,"namn":"Statistiker","antal_platsannonser":15,"antal_ledigajobb":17},{"id":4223,"namn":"Telefonister","antal_platsannonser":29,"antal_ledigajobb":71},{"id":2414,"namn":"Traders och fondförvaltare","antal_platsannonser":2,"antal_ledigajobb":2},{"id":2613,"namn":"Åklagare","antal_platsannonser":1,"antal_ledigajobb":1},{"id":2419,"namn":"Övriga ekonomer","antal_platsannonser":41,"antal_ledigajobb":46},{"id":3359,"namn":"Övriga handläggare","antal_platsannonser":70,"antal_ledigajobb":71},{"id":2619,"namn":"Övriga jurister","antal_platsannonser":28,"antal_ledigajobb":36},{"id":4119,"namn":"Övriga kontorsassistenter och sekreterare","antal_platsannonser":549,"antal_ledigajobb":916}]}}
+{
+  "soklista": {
+    "listnamn": "yrkesgrupper",
+    "totalt_antal_platsannonser": 4017,
+    "totalt_antal_ledigajobb": 6624,
+    "sokdata": [
+      {
+        "id": 2611,
+        "namn": "Advokater",
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 2
+      },
+      {
+        "id": 2614,
+        "namn": "Affärs- och företagsjurister",
+        "antal_platsannonser": 28,
+        "antal_ledigajobb": 32
+      },
+      {
+        "id": 3333,
+        "namn": "Arbetsförmedlare",
+        "antal_platsannonser": 160,
+        "antal_ledigajobb": 216
+      },
+      {
+        "id": 2623,
+        "namn": "Arkeologer och specialister inom humaniora m.m.",
+        "antal_platsannonser": 8,
+        "antal_ledigajobb": 10
+      },
+      {
+        "id": 4410,
+        "namn": "Arkiv- och biblioteksassistenter m.fl.",
+        "antal_platsannonser": 16,
+        "antal_ledigajobb": 50
+      },
+      {
+        "id": 4113,
+        "namn": "Backofficepersonal m.fl.",
+        "antal_platsannonser": 57,
+        "antal_ledigajobb": 81
+      },
+      {
+        "id": 3343,
+        "namn": "Chefssekreterare och VD-assistenter m.fl.",
+        "antal_platsannonser": 34,
+        "antal_ledigajobb": 38
+      },
+      {
+        "id": 2412,
+        "namn": "Controller",
+        "antal_platsannonser": 223,
+        "antal_ledigajobb": 243
+      },
+      {
+        "id": 2612,
+        "namn": "Domare",
+        "antal_platsannonser": 8,
+        "antal_ledigajobb": 8
+      },
+      {
+        "id": 3342,
+        "namn": "Domstols- och juristsekreterare m.fl.",
+        "antal_platsannonser": 13,
+        "antal_ledigajobb": 20
+      },
+      {
+        "id": 4111,
+        "namn": "Ekonomiassistenter m.fl.",
+        "antal_platsannonser": 416,
+        "antal_ledigajobb": 485
+      },
+      {
+        "id": 2413,
+        "namn": "Finansanalytiker och investeringsrådgivare m.fl.",
+        "antal_platsannonser": 53,
+        "antal_ledigajobb": 64
+      },
+      {
+        "id": 3321,
+        "namn": "Försäkringssäljare och försäkringsrådgivare",
+        "antal_platsannonser": 43,
+        "antal_ledigajobb": 90
+      },
+      {
+        "id": 2615,
+        "namn": "Förvaltnings- och organisationsjurister",
+        "antal_platsannonser": 29,
+        "antal_ledigajobb": 35
+      },
+      {
+        "id": 3341,
+        "namn": "Gruppledare för kontorspersonal",
+        "antal_platsannonser": 26,
+        "antal_ledigajobb": 34
+      },
+      {
+        "id": 2432,
+        "namn": "Informatörer, kommunikatörer och PR-specialister",
+        "antal_platsannonser": 138,
+        "antal_ledigajobb": 165
+      },
+      {
+        "id": 4212,
+        "namn": "Inkasserare och pantlånare m.fl.",
+        "antal_platsannonser": 23,
+        "antal_ledigajobb": 27
+      },
+      {
+        "id": 4225,
+        "namn": "Kontorsreceptionister",
+        "antal_platsannonser": 167,
+        "antal_ledigajobb": 306
+      },
+      {
+        "id": 2421,
+        "namn": "Lednings- och organisationsutvecklare",
+        "antal_platsannonser": 142,
+        "antal_ledigajobb": 165
+      },
+      {
+        "id": 4112,
+        "namn": "Löne- och personaladministratörer",
+        "antal_platsannonser": 272,
+        "antal_ledigajobb": 307
+      },
+      {
+        "id": 4117,
+        "namn": "Medicinska sekreterare, vårdadministratörer m fl",
+        "antal_platsannonser": 300,
+        "antal_ledigajobb": 1601
+      },
+      {
+        "id": 3311,
+        "namn": "Mäklare inom finans",
+        "antal_platsannonser": 10,
+        "antal_ledigajobb": 13
+      },
+      {
+        "id": 2415,
+        "namn": "Nationalekonomer och makroanalytiker m.fl.",
+        "antal_platsannonser": 14,
+        "antal_ledigajobb": 17
+      },
+      {
+        "id": 2423,
+        "namn": "Personal- och HR-specialister",
+        "antal_platsannonser": 356,
+        "antal_ledigajobb": 372
+      },
+      {
+        "id": 2422,
+        "namn": "Planerare och utredare m.fl.",
+        "antal_platsannonser": 272,
+        "antal_ledigajobb": 447
+      },
+      {
+        "id": 3313,
+        "namn": "Redovisningsekonomer",
+        "antal_platsannonser": 370,
+        "antal_ledigajobb": 396
+      },
+      {
+        "id": 2411,
+        "namn": "Revisorer m.fl.",
+        "antal_platsannonser": 24,
+        "antal_ledigajobb": 24
+      },
+      {
+        "id": 3314,
+        "namn": "Skadereglerare och värderare",
+        "antal_platsannonser": 15,
+        "antal_ledigajobb": 20
+      },
+      {
+        "id": 3352,
+        "namn": "Skattehandläggare",
+        "antal_platsannonser": 23,
+        "antal_ledigajobb": 76
+      },
+      {
+        "id": 4116,
+        "namn": "Skolassistenter m.fl.",
+        "antal_platsannonser": 17,
+        "antal_ledigajobb": 19
+      },
+      {
+        "id": 3353,
+        "namn": "Socialförsäkringshandläggare",
+        "antal_platsannonser": 23,
+        "antal_ledigajobb": 101
+      },
+      {
+        "id": 2122,
+        "namn": "Statistiker",
+        "antal_platsannonser": 15,
+        "antal_ledigajobb": 17
+      },
+      {
+        "id": 4223,
+        "namn": "Telefonister",
+        "antal_platsannonser": 29,
+        "antal_ledigajobb": 71
+      },
+      {
+        "id": 2414,
+        "namn": "Traders och fondförvaltare",
+        "antal_platsannonser": 2,
+        "antal_ledigajobb": 2
+      },
+      {
+        "id": 2613,
+        "namn": "Åklagare",
+        "antal_platsannonser": 1,
+        "antal_ledigajobb": 1
+      },
+      {
+        "id": 2419,
+        "namn": "Övriga ekonomer",
+        "antal_platsannonser": 41,
+        "antal_ledigajobb": 46
+      },
+      {
+        "id": 3359,
+        "namn": "Övriga handläggare",
+        "antal_platsannonser": 70,
+        "antal_ledigajobb": 71
+      },
+      {
+        "id": 2619,
+        "namn": "Övriga jurister",
+        "antal_platsannonser": 28,
+        "antal_ledigajobb": 36
+      },
+      {
+        "id": 4119,
+        "namn": "Övriga kontorsassistenter och sekreterare",
+        "antal_platsannonser": 549,
+        "antal_ledigajobb": 916
+      }
+    ]
+  }
+}
