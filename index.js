@@ -8,9 +8,8 @@ elastic.connect();
 console.log('(ElasticSearch) Trying to connect...');
 elastic.on('connect', function() {
   console.log('ES connected');
-  fs.readFile('/Users/ilix/skolverket/amnen_och_kurser.xml', function(err, data) {
+  fs.readFile(process.env.COURSES || '/Users/ilix/skolverket/amnen_och_kurser.xml', function(err, data) {
       parser.parseString(data, function (err, result) {
-          //console.dir(result.SubjectsAndCourses);
           result.SubjectsAndCourses.subject.map(function (s) {
             var subject = {
               "code": s.code[0],
