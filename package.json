@@ -1,0 +1,26 @@
+{
+  "name": "skolverket_import",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/refugeetech/skolverket_import.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/refugeetech/skolverket_import/issues"
+  },
+  "homepage": "https://github.com/refugeetech/skolverket_import#readme",
+  "dependencies": {
+    "elasticsearch": "^10.1.3",
+    "events": "^1.1.0",
+    "q": "^1.4.1",
+    "util": "^0.10.3",
+    "xml2js": "^0.4.16"
+  }
+}
