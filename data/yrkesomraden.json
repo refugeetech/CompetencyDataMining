@@ -1,0 +1,135 @@
+{
+  "soklista": {
+    "listnamn": "yrkesomraden",
+    "totalt_antal_platsannonser": 40916,
+    "totalt_antal_ledigajobb": 124829,
+    "sokdata": [
+      {
+        "id": 1,
+        "namn": "Administration, ekonomi, juridik",
+        "antal_platsannonser": 4017,
+        "antal_ledigajobb": 6624
+      },
+      {
+        "id": 2,
+        "namn": "Bygg och anläggning",
+        "antal_platsannonser": 1495,
+        "antal_ledigajobb": 2774
+      },
+      {
+        "id": 20,
+        "namn": "Chefer och verksamhetsledare",
+        "antal_platsannonser": 1585,
+        "antal_ledigajobb": 1867
+      },
+      {
+        "id": 3,
+        "namn": "Data/IT",
+        "antal_platsannonser": 2398,
+        "antal_ledigajobb": 3072
+      },
+      {
+        "id": 5,
+        "namn": "Försäljning, inköp, marknadsföring",
+        "antal_platsannonser": 6032,
+        "antal_ledigajobb": 14242
+      },
+      {
+        "id": 6,
+        "namn": "Hantverksyrken",
+        "antal_platsannonser": 125,
+        "antal_ledigajobb": 177
+      },
+      {
+        "id": 7,
+        "namn": "Hotell, restaurang, storhushåll",
+        "antal_platsannonser": 2577,
+        "antal_ledigajobb": 6727
+      },
+      {
+        "id": 8,
+        "namn": "Hälso- och sjukvård",
+        "antal_platsannonser": 6211,
+        "antal_ledigajobb": 44647
+      },
+      {
+        "id": 9,
+        "namn": "Industriell tillverkning",
+        "antal_platsannonser": 944,
+        "antal_ledigajobb": 3000
+      },
+      {
+        "id": 10,
+        "namn": "Installation, drift, underhåll",
+        "antal_platsannonser": 1322,
+        "antal_ledigajobb": 4227
+      },
+      {
+        "id": 4,
+        "namn": "Kropps- och skönhetsvård",
+        "antal_platsannonser": 332,
+        "antal_ledigajobb": 463
+      },
+      {
+        "id": 11,
+        "namn": "Kultur, media, design",
+        "antal_platsannonser": 538,
+        "antal_ledigajobb": 941
+      },
+      {
+        "id": 22,
+        "namn": "Militärt arbete",
+        "antal_platsannonser": 23,
+        "antal_ledigajobb": 342
+      },
+      {
+        "id": 13,
+        "namn": "Naturbruk",
+        "antal_platsannonser": 303,
+        "antal_ledigajobb": 933
+      },
+      {
+        "id": 14,
+        "namn": "Naturvetenskapligt arbete",
+        "antal_platsannonser": 395,
+        "antal_ledigajobb": 1361
+      },
+      {
+        "id": 15,
+        "namn": "Pedagogiskt arbete",
+        "antal_platsannonser": 4208,
+        "antal_ledigajobb": 6115
+      },
+      {
+        "id": 12,
+        "namn": "Sanering och renhållning",
+        "antal_platsannonser": 887,
+        "antal_ledigajobb": 1825
+      },
+      {
+        "id": 16,
+        "namn": "Socialt arbete",
+        "antal_platsannonser": 4496,
+        "antal_ledigajobb": 15925
+      },
+      {
+        "id": 17,
+        "namn": "Säkerhetsarbete",
+        "antal_platsannonser": 312,
+        "antal_ledigajobb": 1881
+      },
+      {
+        "id": 18,
+        "namn": "Tekniskt arbete",
+        "antal_platsannonser": 1325,
+        "antal_ledigajobb": 1629
+      },
+      {
+        "id": 19,
+        "namn": "Transport",
+        "antal_platsannonser": 1391,
+        "antal_ledigajobb": 6057
+      }
+    ]
+  }
+}
