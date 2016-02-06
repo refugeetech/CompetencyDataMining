@@ -28,7 +28,6 @@ elastic.on('connect', function() {
               });
             });
 
-            //console.log('Subject: ', subject);
             elastic.saveSubject(subject);
           });
       });
@@ -37,8 +36,8 @@ elastic.on('connect', function() {
   /*
    * Languages
    */
-   var languages = require('./data/languages.json');
-   Object.keys(languages).map(function (k) {
+  var languages = require('./data/languages.json');
+  Object.keys(languages).map(function (k) {
      var language = {
        "key": k,
        "name": languages[k].name,
@@ -47,5 +46,13 @@ elastic.on('connect', function() {
      console.log('Language: ', language);
      elastic.saveLanguage(language);
    });
+
+   /*
+    * Yrkesområden.
+    */
+  var yrkesomraden = require('./data/yrkesomraden.json');
+  yrkesomraden.soklista.sokdata.map(function (yrkesomrade) {
+    elastic.saveYrkesomrade(yrkesomrade);
+  });
 
 });
