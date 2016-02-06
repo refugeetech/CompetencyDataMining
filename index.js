@@ -8,6 +8,10 @@ elastic.connect();
 console.log('(ElasticSearch) Trying to connect...');
 elastic.on('connect', function() {
   console.log('ES connected');
+
+  /*
+   * SubjectsAndCourses
+   */
   fs.readFile(process.env.COURSES || '/Users/ilix/skolverket/amnen_och_kurser.xml', function(err, data) {
       parser.parseString(data, function (err, result) {
           result.SubjectsAndCourses.subject.map(function (s) {
@@ -29,4 +33,19 @@ elastic.on('connect', function() {
           });
       });
   });
+
+  /*
+   * Languages
+   */
+   var languages = require('./data/languages.json');
+   Object.keys(languages).map(function (k) {
+     var language = {
+       "key": k,
+       "name": languages[k].name,
+       "nativeName": languages[k].nativeName
+     };
+     console.log('Language: ', language);
+     elastic.saveLanguage(language);
+   });
+
 });
