@@ -6,14 +6,14 @@ var parser = new xml2js.Parser();
 
 elastic.connect();
 console.log('(ElasticSearch) Trying to connect...');
-elastic.on('connect', function() {
+elastic.on('connect', function () {
   console.log('ES connected');
 
   /*
    * SubjectsAndCourses
    */
-  fs.readFile(process.env.COURSES || '/Users/ilix/skolverket/amnen_och_kurser.xml', function(err, data) {
-      parser.parseString(data, function (err, result) {
+  fs.readFile(process.env.COURSES || '/Users/ilix/skolverket/amnen_och_kurser.xml', function (err, data) {
+    parser.parseString(data, function (err, result) {
           result.SubjectsAndCourses.subject.map(function (s) {
             var subject = {
               "code": s.code[0],
@@ -47,12 +47,29 @@ elastic.on('connect', function() {
      elastic.saveLanguage(language);
    });
 
-   /*
-    * Yrkesområden.
-    */
+  /*
+   * Yrkesområden.
+   */
   var yrkesomraden = require('./data/yrkesomraden.json');
   yrkesomraden.soklista.sokdata.map(function (yrkesomrade) {
     elastic.saveYrkesomrade(yrkesomrade);
   });
 
+  /*
+   * Administration, Ekonomi och Juridik.
+   */
+  var adminEkonomiJuridik = require('./data/adminEkonomiJuridik.json');
+  adminEkonomiJuridik.soklista.sokdata.map(function (yrkesomrade) {
+    yrkesomrade.parent = 1;
+    elastic.saveYrkesomrade(yrkesomrade);
+  });
+
+  /*
+   * Administration, Ekonomi och Juridik.
+   */
+  var halsoSjukvard = require('./data/halsoSjukvard.json');
+  halsoSjukvard.soklista.sokdata.map(function (yrkesomrade) {
+    yrkesomrade.parent = 8;
+    elastic.saveYrkesomrade(yrkesomrade);
+  });
 });
