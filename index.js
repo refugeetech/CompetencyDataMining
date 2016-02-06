@@ -1,6 +1,7 @@
 var fs = require('fs');
 var xml2js = require('xml2js');
 var elastic = require('./lib/elastic');
+var afClient = require('./lib/afClient');
 
 var parser = new xml2js.Parser();
 
@@ -43,33 +44,25 @@ elastic.on('connect', function () {
        "name": languages[k].name,
        "nativeName": languages[k].nativeName
      };
-     console.log('Language: ', language);
      elastic.saveLanguage(language);
    });
 
-  /*
-   * Yrkesområden.
-   */
-  var yrkesomraden = require('./data/yrkesomraden.json');
-  yrkesomraden.soklista.sokdata.map(function (yrkesomrade) {
-    elastic.saveYrkesomrade(yrkesomrade);
-  });
-
-  /*
-   * Administration, Ekonomi och Juridik.
-   */
-  var adminEkonomiJuridik = require('./data/adminEkonomiJuridik.json');
-  adminEkonomiJuridik.soklista.sokdata.map(function (yrkesomrade) {
-    yrkesomrade.parent = 1;
-    elastic.saveYrkesomrade(yrkesomrade);
-  });
-
-  /*
-   * Administration, Ekonomi och Juridik.
-   */
-  var halsoSjukvard = require('./data/halsoSjukvard.json');
-  halsoSjukvard.soklista.sokdata.map(function (yrkesomrade) {
-    yrkesomrade.parent = 8;
-    elastic.saveYrkesomrade(yrkesomrade);
-  });
+   /*
+    * Administration, Ekonomi och Juridik.
+    */
+   elastic.save({
+     'id': 1,
+     'foralder': 0,
+     'namn': 'Administration, Ekonomi och Juridik'
+   }, 'yrken', 'yrke');
+   afClient.doRequest('/af/v0/platsannonser/soklista/yrkesgrupper?yrkesomradeid=' + 1, function (tree) {
+     tree.soklista.sokdata.map(function (data) {
+       data.foralder = 1;
+       elastic.save(data, 'yrken', 'yrke');
+       afClient.doRequest('/af/v0/platsannonser/soklista/yrken?yrkesgruppid=' + data.id, function (yrke) {
+         yrke.foralder = data.id;
+         elastic.save(yrke, 'yrken', 'yrke');
+       });
+     });
+   });
 });
