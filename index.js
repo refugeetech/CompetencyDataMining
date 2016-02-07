@@ -7,6 +7,25 @@ var parser = new xml2js.Parser();
 
 elastic.connect();
 console.log('(ElasticSearch) Trying to connect...');
+
+var saveYrkeTree = function (treeId) {
+  elastic.save({
+    'id': treeId,
+    'foralder': 0,
+    'namn': 'Administration, Ekonomi och Juridik'
+  }, 'yrken', 'yrke');
+  afClient.doRequest('/af/v0/platsannonser/soklista/yrkesgrupper?yrkesomradeid=' + treeId, function (tree) {
+    tree.soklista.sokdata.map(function (data) {
+      data.foralder = treeId;
+      elastic.save(data, 'yrken', 'yrke');
+      afClient.doRequest('/af/v0/platsannonser/soklista/yrken?yrkesgruppid=' + data.id, function (yrke) {
+        yrke.foralder = data.id;
+        elastic.save(yrke, 'yrken', 'yrke');
+      });
+    });
+  });
+};
+
 elastic.on('connect', function () {
   console.log('ES connected');
 
@@ -50,19 +69,10 @@ elastic.on('connect', function () {
    /*
     * Administration, Ekonomi och Juridik.
     */
-   elastic.save({
-     'id': 1,
-     'foralder': 0,
-     'namn': 'Administration, Ekonomi och Juridik'
-   }, 'yrken', 'yrke');
-   afClient.doRequest('/af/v0/platsannonser/soklista/yrkesgrupper?yrkesomradeid=' + 1, function (tree) {
-     tree.soklista.sokdata.map(function (data) {
-       data.foralder = 1;
-       elastic.save(data, 'yrken', 'yrke');
-       afClient.doRequest('/af/v0/platsannonser/soklista/yrken?yrkesgruppid=' + data.id, function (yrke) {
-         yrke.foralder = data.id;
-         elastic.save(yrke, 'yrken', 'yrke');
-       });
-     });
-   });
+   saveYrkeTree(1);
+
+   /*
+    * Hälso- och sjukvård.
+    */
+   saveYrkeTree(8);
 });
