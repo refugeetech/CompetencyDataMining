@@ -6,13 +6,17 @@ In short, the code written here is used to import data into ElasticSearch.
 
 ## run with docker
 
+See docker-compose.yml for more info.
+
 ```
 docker-compose up
 ```
 
 ## run locally
 
+Use env to set IP and port of your elasticsearch.
+
 ```
 npm install
-node index.js
+ELASTICSEARCH=127.0.0.1:9200 node index.js
 ```
