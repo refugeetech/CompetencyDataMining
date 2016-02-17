@@ -1,13 +1,13 @@
-reftec-elasticsearch:
+competency-elasticsearch:
   image: elasticsearch
   ports:
     - '9200:9200'
     - '9300:9300'
-reftec-skolverket-import:
+competency-data-mining:
   build: .
   entrypoint: node index.js
   links:
-    - 'reftec-elasticsearch'
+    - 'competency-elasticsearch'
   environment:
     - 'COURSES=/app/data/amnen_och_kurser.xml'
-    - 'ELASTICSEARCH=reftec-elasticsearch:9200'
+    - 'ELASTICSEARCH=competency-elasticsearch:9200'
