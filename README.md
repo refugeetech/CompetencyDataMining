@@ -29,3 +29,7 @@ Use env to set IP and port of your elasticsearch.
 npm install
 ELASTICSEARCH=127.0.0.1:9200 node index.js
 ```
+
+## License
+
+MIT
