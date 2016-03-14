@@ -30,6 +30,12 @@ npm install
 ELASTICSEARCH=127.0.0.1:9200 node index.js
 ```
 
+### clear index and run once
+
+```
+curl -XDELETE 'http://192.168.99.100:9200/proficiencies' ; ELASTICSEARCH=192.168.99.100:9200 node index.js
+```
+
 ## License
 
 MIT
